@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    img: max width 100%;;
+}
+html{
+    scroll-behavior: smooth;
+}
+a { color: #504c45;
+    text-decoration: none}
+a:hover:not(#instalink, #mailiconlink){
+    background-color:#5d5b62 ;
+    color: #f3f0e1;
+    transition: 0.7s;
+    border-radius: 5px;
+    padding: 4px;
+}
+ul{ color:#504c45;
+    list-style-type: none;}
+body{ background-color: #f3f0e1;
+        cursor: pointer;
+}
+@font-face {
+    font-family: "mttmilano";
+    src: url(/fonts/mttmilano.otf);
+
+}
+/* color tipo header f3f0e1
+    color fondo f3f0e1
+    color bgheader y footer 5d5b62
+     color tipo botones y menu48454B
+     COLOR NARANJA ff6a00
+     other cool color options
+     c8baac
+     cbcbcc silver
+     615950
+     */
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.h1{
+    color: #f3f0e1;
+    background-color:#5d5b62  ;
+    font-family:"mttmilano" ;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    width: 100%;
+
+}
+.footer{
+    color: #f3f0e1;
+    font-family: "mttmilano";
+    text-align: center;
+    background-color: #5d5b62;
+    font-size: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.Menu{
+    position: relative ;
+    text-align: center;
+}
+.menuitem{
+    color: black;
+    margin: 1rem;
+    font-family: "mttmilano";
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    /* left: 450px; */
+
+    /* color: black;
+    border: 2px solid black; */
+}
+
+.introgallery{
+    height: 100vh;
+    width: 100vh;
+    display: grid;
+    grid-template-rows: 50% 50% ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "img00 img01 img02 img03 img04 img05"
+    "img00 img06 img07 img08 img09 img10";
+    /* margin: 20px;
+    padding: 20px; */
+}
+.img00{
+    grid-area: img00;
+}
+.img01{
+    grid-area: img01;
+}
+.img02{
+    grid-area: img02;
+}
+.img03{
+    grid-area: img03;
+}
+.img04{
+    grid-area: img04;
+}
+.img05{
+    grid-area: img05;
+}
+.img06{
+    grid-area: img06;
+}
+.img07{
+    grid-area: img07;
+}
+.img08{
+    grid-area: img08;
+}
+.img09{
+    grid-area: img09;
+}
+.img10{
+    grid-area: img10;
+}
+img{
+   max-width: 40vh;
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+.gallery1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    flex-wrap:nowrap;
+}
+.flor1{
+    display: flex;
+    width: 450px;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    transition: 0.3s;
+    /* object-fit:cover ; */
+    overflow: hidden;
+}
+.flor1:hover{
+    transform: scale(1.1);
+}
+.sectionicons {
+    position: relative;
+  }
+
+  .sectionicons div {
+    position: absolute;
+    top: 34vh;
+    bottom: 0;
+    right: 18px;
+    display: flex;
+  }
+
+  .sectionicons a {
+    margin-left: 1rem;
+    font-size:24px;
+    text-decoration: none;
+  }
+
+i:hover{
+    background-color:#5d5b62 ;
+    color: #f3f0e1;
+    transition: 0.7s;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.contactform{
+    display: grid;
+    grid-template-columns: 100px 300px 300px;
+    grid-template-rows: 100px 300px 300px;
+    grid-template-areas:
+     "Nombre commentbox commentbox"
+     "email commentbox commentbox";
+}
+.Nombre{grid-area: Nombre;}
+.email{grid-area: email;}
+.commentbox{grid-area: commentbox;}
+
+.buttonsend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonsend:hover{
+    background-color:#5d5b62 ;
+    color: #f3f0e1;
+    transition: 0.7s;
+    border-radius: 5px;
+}
+input:hover{
+    border-radius: 4px;
+    padding: 2px;
+    border: 1px solid;
+    border-color:#f3f0e1 ;
+    box-shadow: 0 0 5px;
+    outline: none;
+}
+@media(max-width:1000px)
+    {.header{background-color: #606061;}}
