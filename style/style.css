@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    img: max width 100%;;
+    /* img: max width 100%;; */
 }
 html{
     scroll-behavior: smooth;
@@ -90,52 +90,51 @@ body{ background-color: #f3f0e1;
 
 .introgallery{
     height: 100vh;
-    width: 100vh;
     display: grid;
     grid-template-rows: 50% 50% ;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "img00 img01 img02 img03 img04 img05"
-    "img00 img06 img07 img08 img09 img10";
+    "img-00 img-01 img-02 img-03 img-04 img-05"
+    "img-00 img-06 img-07 img-08 img-09 img-10";
     /* margin: 20px;
     padding: 20px; */
 }
 .img00{
-    grid-area: img00;
+    grid-area: img-00;
 }
 .img01{
-    grid-area: img01;
+    grid-area: img-01;
 }
 .img02{
-    grid-area: img02;
+    grid-area: img-02;
 }
 .img03{
-    grid-area: img03;
+    grid-area: img-03;
 }
 .img04{
-    grid-area: img04;
+    grid-area: img-04;
 }
 .img05{
-    grid-area: img05;
+    grid-area: img-05;
 }
 .img06{
-    grid-area: img06;
+    grid-area: img-06;
 }
 .img07{
-    grid-area: img07;
+    grid-area: img-07;
 }
 .img08{
-    grid-area: img08;
+    grid-area: img-08;
 }
 .img09{
-    grid-area: img09;
+    grid-area: img-09;
 }
 .img10{
-    grid-area: img10;
+    grid-area: img-10;
 }
 img{
-   max-width: 40vh;
-    max-height: 50vh;
+   /* max-width: 40%; */
+    max-height: 100%;
     object-fit: cover;
 }
 
