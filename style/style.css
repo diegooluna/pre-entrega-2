@@ -206,29 +206,7 @@ i:hover{
     padding: 6px;
 }
 
-.contactform{
-    display: grid;
-    grid-template-columns: 100px 300px 300px;
-    grid-template-rows: 100px 300px 300px;
-    grid-template-areas:
-     "Nombre commentbox commentbox"
-     "email commentbox commentbox";
-}
-.Nombre{grid-area: Nombre;}
-.email{grid-area: email;}
-.commentbox{grid-area: commentbox;}
 
-.buttonsend{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.buttonsend:hover{
-    background-color:#5d5b62 ;
-    color: #f3f0e1;
-    transition: 0.7s;
-    border-radius: 5px;
-}
 input:hover{
     border-radius: 4px;
     padding: 2px;
@@ -272,7 +250,14 @@ input:hover{
 .imagen4{
     grid-area: imagen4;
     max-height: 45vh;
+}
 
+.btn-primary{
+    background-color:#5d5b62 !important ;
+    border: #3a3635;
+    color: #f3f0e1 !important;
+    /* transition: 0.7s !important; */
+    padding: 6px !important;
 }
 @media(max-width:1000px)
     {.header{background-color: #606061;}}
