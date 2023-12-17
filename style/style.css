@@ -47,20 +47,26 @@ body{ background-color: #f3f0e1;
 }
 .h1{
     color: #f3f0e1;
-    background-color:#5d5b62  ;
+    background-color:#3a3635  ;
     font-family:"mttmilano" ;
     text-align: center;
-    font-weight: bold;
     font-size: 4rem;
-    margin-bottom: 1rem;
+    letter-spacing: 0.75em;
+    /* word-spacing: 0.25em; */
+    /* margin-bottom: 1rem; */
     width: 100%;
-
+padding-top: 1rem;
+}
+.h1p{
+    font-size: 1rem;
+    letter-spacing: 0.60em;
+    padding: 1rem;
 }
 .footer{
     color: #f3f0e1;
     font-family: "mttmilano";
     text-align: center;
-    background-color: #5d5b62;
+    background-color: #3a3635;
     font-size: 15px;
     padding: 10px;
     display: flex;
@@ -75,7 +81,6 @@ body{ background-color: #f3f0e1;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: beige;
     position: fixed;
     top: 50%;
     right: 50%;
@@ -83,14 +88,18 @@ body{ background-color: #f3f0e1;
     left: 50%;
     font-family: "mttmilano";
 }
-/* .btn-dark:hover{
-    background-color:#5d5b62 ;
+.boton-inicio a {
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+}
+
+.boton-inicio a:hover {
+    background-color: #5d5b62;
     color: #f3f0e1;
     transition: 0.7s;
     border-radius: 50%;
     padding: 6px;
+}
 
-} */
 .Menu{
     position: relative ;
     text-align: center;
