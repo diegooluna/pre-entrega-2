@@ -6,6 +6,7 @@
 }
 html{
     scroll-behavior: smooth;
+    
 }
 a { color: #504c45;
     text-decoration: none}
@@ -42,6 +43,7 @@ body{ background-color: #f3f0e1;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 .h1{
     color: #f3f0e1;
@@ -67,8 +69,28 @@ body{ background-color: #f3f0e1;
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
 }
+.boton-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    bottom: 50%;
+    left: 50%;
+    font-family: "mttmilano";
+}
+/* .btn-dark:hover{
+    background-color:#5d5b62 ;
+    color: #f3f0e1;
+    transition: 0.7s;
+    border-radius: 50%;
+    padding: 6px;
+
+} */
 .Menu{
     position: relative ;
     text-align: center;
@@ -90,52 +112,67 @@ body{ background-color: #f3f0e1;
 
 .introgallery{
     height: 100vh;
+    width: 100vw;
     display: grid;
-    grid-template-rows: 50% 50% ;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
     "img-00 img-01 img-02 img-03 img-04 img-05"
     "img-00 img-06 img-07 img-08 img-09 img-10";
-    /* margin: 20px;
-    padding: 20px; */
 }
 .img00{
     grid-area: img-00;
+    overflow: hidden;
 }
 .img01{
     grid-area: img-01;
+    overflow: hidden;
 }
 .img02{
     grid-area: img-02;
+    overflow: hidden;
 }
 .img03{
     grid-area: img-03;
+    overflow: hidden;
 }
 .img04{
     grid-area: img-04;
+    overflow: hidden;
 }
 .img05{
     grid-area: img-05;
+    overflow: hidden;
 }
 .img06{
     grid-area: img-06;
+    overflow: hidden;
 }
 .img07{
     grid-area: img-07;
+    overflow: hidden;
 }
 .img08{
     grid-area: img-08;
+    overflow: hidden;
 }
 .img09{
     grid-area: img-09;
+    overflow: hidden;
 }
 .img10{
     grid-area: img-10;
+    overflow: hidden;
 }
 img{
    /* max-width: 40%; */
     max-height: 100%;
     object-fit: cover;
+}
+.hijo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery1{
