@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIEGO LUNA PHOTO</title>
-    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
     <style type="text/css"></style>
@@ -30,18 +30,22 @@
  
       </main>
         </div>
-    <div class="contactform">
-        <form action="formulario" method="post" >
-            <input type="text" class="Nombre" placeholder="Nombre">
-            <input type="email" class="email" placeholder="email">
-            <textarea class="commentbox" placeholder="How can I help you?" ></textarea>
-            <div>
-            <input type="submit" value="Send" class="buttonsend">
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
-            <input type="checkbox" class="agree">
-            <p class="agreement">Do you agree to be contacted in the future?</p>
-        </form>
-    </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
 
    
     <section class="sectionicons">
@@ -56,6 +60,6 @@
         <p>All rights Reserved - Todos los Derechos Reservados | Diego Luna Photo ®</p>
     </footer>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
