@@ -116,10 +116,6 @@ body{ background-color: #f3f0e1;
     display: inline-block;
     text-align: center;
     position: relative;
-    /* left: 450px; */
-
-    /* color: black;
-    border: 2px solid black; */
 }
 
 .introgallery{
@@ -212,23 +208,7 @@ img{
 .flor1:hover{
     transform: scale(1.1);
 }
-.sectionicons {
-    position: relative;
-  }
 
-  .sectionicons div {
-    position: absolute;
-    top: 34vh;
-    bottom: 0;
-    right: 18px;
-    display: flex;
-  }
-
-  .sectionicons a {
-    margin-left: 1rem;
-    font-size:24px;
-    text-decoration: none;
-  }
 
 i:hover{
     background-color:#5d5b62 ;
