@@ -219,45 +219,47 @@ input:hover{
 }
 .galeriamotos{
     height: 100vh;
-    width: 100vw;
     display: grid;
+    gap: 0.5rem;
+    justify-items: center;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
         "img1 img2"
-        "img1 img3"
-        "img4 img5"
-        "img4 img6";
-    gap: 0.5rem;
-
+        "img3 img4"
+       
+    /* movi gap y justify items arriba del grid template columns por que al estar aca abajo del template areas me daba error en el terminal y se veia cualquier cosa! */
 }
 .itemgal1{
     grid-area: img1;
+    overflow: hidden;
 }
-.itemgal2{
-    grid-area: img2;
-}
+
 .itemgal3{
-    grid-area: img3;
-}
-.itemgal4{
-    grid-area: img4;
+    grid-area: img2;
+    overflow: hidden;
+
 }
 .itemgal5{
-    grid-area: img5;
+    grid-area: img3;
+    overflow: hidden;
+
 }
 .itemgal6{
-    grid-area: img6;
+    grid-area: img4;
+    overflow: hidden;
+
 }
 .gridaboutme{
     display: grid;
+    column-gap: 1rem;
+    row-gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-template-areas:  
             "texto texto imagen1 imagen2"
             "texto texto imagen3 imagen4";
-    column-gap: 1rem;
-    row-gap: 2rem;
+   
 }
 .aboutmetxt{
     height: auto;
@@ -387,6 +389,23 @@ input:hover{
     .imagen4 {
         max-height: 30vh;
         width: 100%;
+    }
+    .galeriamotos {
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+            "img1"
+            "img2"
+            "img3"
+            "img4";
+    }
+    .itemgal1 img,
+    .itemgal2 img,
+    .itemgal3 img,
+    .itemgal4 img,
+    .itemgal5 img,
+    .itemgal6 img {
+        width: 100vw; 
     }
 
 }
