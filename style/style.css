@@ -31,10 +31,10 @@ body{ background-color: #f3f0e1;
 .header{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;    
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 .h1{
     color: #f3f0e1;
@@ -46,7 +46,7 @@ body{ background-color: #f3f0e1;
     /* word-spacing: 0.25em; */
     /* margin-bottom: 1rem; */
     padding-top: 1rem;
-    width: 100vw;
+    width: 100%;
 
 }
 .h1p{
@@ -296,15 +296,29 @@ input:hover{
     color: #f3f0e1 !important;
     /* transition: 0.7s !important; */
     padding: 6px !important;
+    margin: 0.5rem;
 }
-/* @media(max-width:1000px)
-    {.h1p, .h1, .footer, .menuitem{color:  #3a3635;
-        background-color:#f3f0e1  ;}}
-@media(max-width: 1000px){
-} */
+.mb-3{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 15px;
+}
+.btn-primary {
+    align-self: center; 
+}
+
+.form-control{
+    width: 200px;
+}
 
 @media (max-width: 992px) {
-    .header{
+    .mb-3 {
+        width: auto;
+    }
+    .header {
         display: inline-block;
         width: 100vw;
     }
@@ -312,6 +326,7 @@ input:hover{
         font-size: 2rem;
         letter-spacing: 0.4em;
         text-align: center;
+        width: 100vw;
     }
 
     .h1p {
@@ -319,6 +334,11 @@ input:hover{
         letter-spacing: 0.1em;
         padding: 0.5rem;
         text-align: center;
+        width: 100vw;
+    }
+    .menuitem {
+        font-size: 14px;
+
     }
     .gallery1 {
         flex-direction: column; 
@@ -328,7 +348,15 @@ input:hover{
     .flor1 {
         width: 80%; 
     }
-    
+     
+    /* GIAN intente por todos los medios hacer esto responsive siguiendo la clase grabada y un video de carpi y no se por que no lo logre, ayuda
+    .introgallery {
+        grid-template-rows: repeat(2, 1fr); 
+        grid-template-columns: repeat(4, 1fr);
+       
+    }  */
+   
+
     .footer {
         font-size: 12px;
         padding: 1px;
@@ -360,4 +388,5 @@ input:hover{
         max-height: 30vh;
         width: 100%;
     }
+
 }
