@@ -260,7 +260,7 @@ input:hover{
     row-gap: 2rem;
 }
 .aboutmetxt{
-    height: 20vh;
+    height: auto;
     width: 40vw;
     grid-area: texto ;
     font-family: "mtttmilano";
@@ -272,6 +272,10 @@ input:hover{
 .imagen1{
     grid-area: imagen1;
     max-height: 45vh;
+    width: 500px;
+    /*  Gian intente hacerlas cuadradas solo para probar pero no me funciono, escucho sugerencias jaja
+    aspect-ratio: 1/1 !important ;
+    object-fit: cover !important; */
 }
 .imagen2{
     grid-area: imagen2;
@@ -293,5 +297,67 @@ input:hover{
     /* transition: 0.7s !important; */
     padding: 6px !important;
 }
-@media(max-width:1000px)
-    {.header{background-color: #606061;}}
+/* @media(max-width:1000px)
+    {.h1p, .h1, .footer, .menuitem{color:  #3a3635;
+        background-color:#f3f0e1  ;}}
+@media(max-width: 1000px){
+} */
+
+@media (max-width: 992px) {
+    .header{
+        display: inline-block;
+        width: 100vw;
+    }
+    .h1 {
+        font-size: 2rem;
+        letter-spacing: 0.4em;
+        text-align: center;
+    }
+
+    .h1p {
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+        padding: 0.5rem;
+        text-align: center;
+    }
+    .gallery1 {
+        flex-direction: column; 
+        height: auto; 
+    }
+    
+    .flor1 {
+        width: 80%; 
+    }
+    
+    .footer {
+        font-size: 12px;
+        padding: 1px;
+    }
+
+    .boton-inicio {
+        font-size: 1rem;
+    }
+
+    .boton-inicio a {
+        font-size: 1rem !important;
+    }
+
+    .aboutmetxt {
+        height: 40vh;
+        width: 40vw;
+        font-size: 0.8em;
+        margin: 0.5rem;
+    }
+
+    .imagen1 {
+        max-height: 30vh;
+        width: 100%;
+    }
+
+    .imagen2,
+    .imagen3,
+    .imagen4 {
+        max-height: 30vh;
+        width: 100%;
+    }
+}
