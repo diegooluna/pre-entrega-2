@@ -398,7 +398,7 @@ input:hover{
     }
     .galeriamotos {
         grid-template-columns: 1fr; 
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         grid-template-areas: 
             "img1"
             "img2"
@@ -406,12 +406,23 @@ input:hover{
             "img4";
     }
     .itemgal1 img,
-    .itemgal2 img,
     .itemgal3 img,
-    .itemgal4 img,
     .itemgal5 img,
     .itemgal6 img {
-        width: 100vw; 
+        width: 85vw; 
+        height:25vh;
+        transition: .5s linear;
+        align-self:top;
     }
-
+    .itemgal1 img:hover,
+    .itemgal3 img:hover,
+    .itemgal5 img:hover,
+    .itemgal6 img:hover {
+         margin-top: 8px;
+}
+    .itemgal1:hover{
+        content:"Harley Davidson 883 Bobber by Pacorro";
+        font-size: 4em;
+        text-shadow: 0 0 10px #f3f0e1 ;
+    }
 }
