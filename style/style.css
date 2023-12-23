@@ -275,10 +275,15 @@ input:hover{
     width: 40vw;
     grid-area: texto ;
     font-family: "mtttmilano"!important;
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1.2em;
+    text-align: justify;
     justify-self: center;
     margin: 1rem;
+    padding-bottom: 1rem;
+}
+#importantword{
+    /* text-decoration: underline; */
+    font-weight:bold !important;
 }
 li::marker{
     content: '';
