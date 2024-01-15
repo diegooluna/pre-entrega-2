@@ -6,32 +6,6 @@
   /* img: max width 100%;; */
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-a {
-  color: #504c45;
-  text-decoration: none;
-}
-
-a:hover:not(#instalink, #mailiconlink) {
-  background-color: #5d5b62;
-  color: #f3f0e1;
-  transition: 0.7s;
-  border-radius: 5px;
-  padding: 4px;
-}
-
-body {
-  background-color: #f3f0e1;
-  cursor: pointer;
-}
-
-@font-face {
-  font-family: "mttmilano";
-  src: url(../fonts/mttmilano.otf);
-}
 .header {
   display: flex;
   flex-direction: row;
@@ -73,47 +47,6 @@ body {
   bottom: 0;
   left: 0;
   width: 100vw;
-}
-
-.boton-inicio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 50%;
-  right: 50%;
-  bottom: 50%;
-  left: 50%;
-  font-family: "mttmilano";
-  white-space: nowrap;
-}
-.boton-inicio .boton-inicio a .btn a:hover {
-  background-color: #5d5b62;
-  color: #f3f0e1;
-  transition: 0.7s;
-  border-radius: 50%;
-  padding: 6px;
-  white-space: nowrap;
-  font-size: 1.5rem !important;
-}
-
-.Menu {
-  position: relative;
-  text-align: center;
-}
-.Menu ul {
-  color: #504c45;
-  list-style-type: none;
-}
-.Menu .menuitem {
-  color: black;
-  margin: 1rem;
-  font-family: "mttmilano";
-  text-decoration: none;
-  list-style-type: none;
-  display: inline-block;
-  text-align: center;
-  position: relative;
 }
 
 .introgallery {
@@ -173,65 +106,6 @@ body {
   align-items: center;
 }
 
-img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  vertical-align: middle;
-}
-
-#carouselExampleSlidesOnly {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#carouselExampleSlidesOnly .carousel-inner {
-  display: flex;
-  margin: 0 auto;
-}
-#carouselExampleSlidesOnly .carousel-inner .carousel-item {
-  width: 60vw;
-  margin: 0 auto;
-}
-
-.gallery1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 800px;
-  flex-wrap: nowrap;
-}
-.gallery1 .flor1 {
-  width: 450px;
-  margin-top: 0.5rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-left: 0.5rem;
-  transition: 0.3s;
-}
-.gallery1 .flor1:hover {
-  transform: scale(1.1);
-}
-
-i:hover {
-  background-color: #5d5b62;
-  color: #f3f0e1;
-  transition: 0.7s;
-  border-radius: 50%;
-  padding: 6px;
-}
-
-input:hover {
-  border-radius: 4px;
-  padding: 2px;
-  border: 1px solid;
-  border-color: #f3f0e1;
-  box-shadow: 0 0 5px;
-  outline: none;
-}
-
 .galeriamotos {
   height: 100vh;
   display: grid;
@@ -271,7 +145,7 @@ input:hover {
   height: auto;
   width: 40vw;
   grid-area: texto;
-  font-family: "mtttmilano" !important;
+  font-family: "mttmilano" !important;
   font-size: 1.2em;
   text-align: justify;
   justify-self: center;
@@ -300,44 +174,6 @@ input:hover {
   max-height: 45vh;
 }
 
-.btn-primary {
-  background-color: #5d5b62 !important;
-  border: #3a3635;
-  color: #f3f0e1 !important;
-  /* transition: 0.7s !important; */
-  padding: 6px !important;
-  margin: 0.5rem;
-}
-
-.mb-3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-bottom: 15px;
-}
-
-.btn-primary {
-  align-self: center;
-}
-
-.form-control {
-  width: 200px;
-}
-
-@media (max-width: 1600px) {
-  .aboutmetxt {
-    display: none;
-  }
-  .aboutmemobile {
-    display: inline;
-    height: 40vh;
-    width: 40vw;
-    font-size: 1em;
-    margin: 0.5rem;
-  }
-}
 @media (max-width: 800px) {
   .mb-3 {
     width: auto;
@@ -430,5 +266,169 @@ input:hover {
     content: "Harley Davidson 883 Bobber by Pacorro";
     font-size: 4em;
     text-shadow: 0 0 10px #f3f0e1;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #504c45;
+  text-decoration: none;
+}
+
+a:hover:not(#instalink, #mailiconlink) {
+  background-color: #3a3635;
+  color: #f3f0e1;
+  transition: 0.7s;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+body {
+  background-color: #f3f0e1;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "mttmilano";
+  src: url(../fonts/mttmilano.otf);
+}
+.boton-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%;
+  font-family: "mttmilano";
+  white-space: nowrap;
+}
+.boton-inicio .boton-inicio a .btn a:hover {
+  background-color: #5d5b62;
+  color: #f3f0e1;
+  transition: 0.7s;
+  border-radius: 50%;
+  padding: 6px;
+  white-space: nowrap;
+  font-size: 1.5rem !important;
+}
+
+.Menu {
+  position: relative;
+  text-align: center;
+}
+.Menu ul {
+  color: #504c45;
+  list-style-type: none;
+}
+.Menu .menuitem {
+  color: black;
+  margin: 1rem;
+  font-family: "mttmilano";
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+}
+
+#carouselExampleSlidesOnly {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#carouselExampleSlidesOnly .carousel-inner {
+  display: flex;
+  margin: 0 auto;
+}
+#carouselExampleSlidesOnly .carousel-inner .carousel-item {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.gallery1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  flex-wrap: nowrap;
+}
+.gallery1 .flor1 {
+  width: 450px;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  transition: 0.3s;
+}
+.gallery1 .flor1:hover {
+  transform: scale(1.1);
+}
+
+i:hover {
+  background-color: #5d5b62;
+  color: #f3f0e1;
+  transition: 0.7s;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+input:hover {
+  border-radius: 4px;
+  padding: 2px;
+  border: 1px solid;
+  border-color: #f3f0e1;
+  box-shadow: 0 0 5px;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: #5d5b62 !important;
+  border: #3a3635;
+  color: #f3f0e1 !important;
+  /* transition: 0.7s !important; */
+  padding: 6px !important;
+  margin: 0.5rem;
+}
+
+.mb-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  align-self: center;
+}
+
+.form-control {
+  width: 200px;
+}
+
+@media (max-width: 1600px) {
+  .aboutmetxt {
+    display: none;
+  }
+  .aboutmemobile {
+    display: inline;
+    height: 40vh;
+    width: 40vw;
+    font-size: 1em;
+    margin: 0.5rem;
   }
 }/*# sourceMappingURL=estilos.css.map */

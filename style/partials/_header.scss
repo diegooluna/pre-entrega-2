@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .h1{
+        color: $color-fondo;
+        background-color: $color-header ;
+        font-family:$fuente-general;
+        text-align: center;
+        font-size: 4rem;
+        letter-spacing: 0.75em;
+        /* word-spacing: 0.25em; */
+        /* margin-bottom: 1rem; */
+        padding-top: 1rem;
+        width: 100%;
+    
+    }
+    .h1p{
+        font-size: 1rem;
+        letter-spacing: 0.60em;
+        padding: 1rem;
+        width: 100vw;
+    
+    }
+}

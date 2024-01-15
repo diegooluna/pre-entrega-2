@@ -1,0 +1,136 @@
+.introgallery{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    "img-00 img-01 img-02 img-03 img-04 img-05"
+    "img-00 img-06 img-07 img-08 img-09 img-10";
+
+    .img00{
+        grid-area: img-00;
+        overflow: hidden;
+    }
+    .img01{
+        grid-area: img-01;
+        overflow: hidden;
+    }
+    .img02{
+        grid-area: img-02;
+        overflow: hidden;
+    }
+    .img03{
+        grid-area: img-03;
+        overflow: hidden;
+    }
+    .img04{
+        grid-area: img-04;
+        overflow: hidden;
+    }
+    .img05{
+        grid-area: img-05;
+        overflow: hidden;
+    }
+    .img06{
+        grid-area: img-06;
+        overflow: hidden;
+    }
+    .img07{
+        grid-area: img-07;
+        overflow: hidden;
+    }
+    .img08{
+        grid-area: img-08;
+        overflow: hidden;
+    }
+    .img09{
+        grid-area: img-09;
+        overflow: hidden;
+    }
+    .img10{
+        grid-area: img-10;
+        overflow: hidden;
+        
+    }
+    .hijo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.galeriamotos{
+    height: 100vh;
+    display: grid;
+    gap: 0.5rem;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "img1 img2"
+        "img3 img4";
+       
+        .itemgal1{
+            grid-area: img1;
+            overflow: hidden;
+        }
+        
+        .itemgal3{
+            grid-area: img2;
+            overflow: hidden;
+        
+        }
+        .itemgal5{
+            grid-area: img3;
+            overflow: hidden;
+        
+        }
+        .itemgal6{
+            grid-area: img4;
+            overflow: hidden;
+        }
+}
+
+.gridaboutme{
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:  
+            "texto texto imagen1 imagen2"
+            "texto texto imagen3 imagen4";
+   
+            .aboutmetxt{
+                height: auto;
+                width: 40vw;
+                grid-area: texto ;
+                font-family: $fuente-general!important;
+                font-size: 1.2em;
+                text-align: justify;
+                justify-self: center;
+                margin: 1rem;
+                padding-bottom: 1rem;
+            }   
+            .aboutmemobile{
+                display: none;
+            }
+            .imagen1{
+                grid-area: imagen1;
+                max-height: 45vh;
+                align-self: start;
+                overflow: hidden;
+            
+            }
+            .imagen2{
+                grid-area: imagen2;
+                max-height: 45vh;
+            }
+            .imagen3{
+                grid-area: imagen3;
+                max-height: 45vh;
+            }
+            .imagen4{
+                grid-area: imagen4;
+                max-height: 45vh;
+            }
+}
