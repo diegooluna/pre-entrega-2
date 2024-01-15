@@ -1,3 +1,8 @@
+$color-fondo:#f3f0e1;
+$color-header:#3a3635;
+$link-hover:#5d5b62;
+$fuente-general: "mttmilano";
+
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +24,7 @@ a:hover:not(#instalink, #mailiconlink){
     padding: 4px;
 }
 
-body{ background-color: #f3f0e1;
+body{ background-color: $color-fondo;
         cursor: pointer;
 }
 @font-face {
@@ -38,7 +43,7 @@ body{ background-color: #f3f0e1;
 
     .h1{
         color: #f3f0e1;
-        background-color:#3a3635  ;
+        background-color: $color-header ;
         font-family:"mttmilano" ;
         text-align: center;
         font-size: 4rem;
@@ -60,7 +65,7 @@ body{ background-color: #f3f0e1;
 
 .footer{
     color: #f3f0e1;
-    font-family: "mttmilano";
+    font-family: $fuente-general;
     text-align: center;
     background-color: #3a3635;
     font-size: 15px;
@@ -84,7 +89,6 @@ body{ background-color: #f3f0e1;
     left: 50%;
     font-family: "mttmilano";
     white-space: nowrap; 
-
     
     .boton-inicio a {
         .btn{
@@ -227,7 +231,7 @@ img{
 
 
 i:hover{
-    background-color:#5d5b62 ;
+    background-color: $link-hover ;
     color: #f3f0e1;
     transition: 0.7s;
     border-radius: 50%;
