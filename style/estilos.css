@@ -51,22 +51,37 @@
 
 @keyframes animationgallery0 {
   0% {
-    filter: saturate(0%);
+    opacity: 10%;
+  }
+  10% {
+    opacity: 15%;
   }
   20% {
-    filter: saturate(20%);
+    opacity: 20%;
+  }
+  30% {
+    opacity: 35%;
   }
   40% {
-    filter: saturate(40%);
+    opacity: 40%;
+  }
+  50% {
+    opacity: 55%;
   }
   60% {
-    filter: saturate(60%);
+    opacity: 60%;
+  }
+  70% {
+    opacity: 75%;
   }
   80% {
-    filter: saturate(80%);
+    opacity: 80%;
+  }
+  90% {
+    opacity: 90%;
   }
   100% {
-    filter: saturate(100%);
+    opacity: 100%;
   }
 }
 .introgallery {
@@ -74,7 +89,7 @@
   display: grid;
   animation-name: animationgallery0;
   animation-iteration-count: initial;
-  animation-duration: 8s;
+  animation-duration: 5s;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(6, 1fr);
   grid-template-areas: "img-00 img-01 img-02 img-03 img-04 img-05" "img-00 img-06 img-07 img-08 img-09 img-10";
