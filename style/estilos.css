@@ -85,10 +85,7 @@ body {
   bottom: 50%;
   left: 50%;
   font-family: "mttmilano";
-}
-.boton-inicio .boton-inicio a {
   white-space: nowrap;
-  font-size: 1.5rem !important;
 }
 .boton-inicio .boton-inicio a .btn a:hover {
   background-color: #5d5b62;
@@ -96,6 +93,8 @@ body {
   transition: 0.7s;
   border-radius: 50%;
   padding: 6px;
+  white-space: nowrap;
+  font-size: 1.5rem !important;
 }
 
 .Menu {
