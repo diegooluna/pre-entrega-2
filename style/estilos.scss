@@ -1,8 +1,8 @@
 @import "./partials/variables";
 @import "./partials/reset";
 @import "./partials/header";
-@import "./partials/footer";
 @import "./partials/grillas";
+@import "./partials/footer";
 @import "./partials/mediaqueries";
 
 
@@ -28,9 +28,6 @@ body{ background-color: $color-fondo;
     src: url(../fonts/mttmilano.otf);
 
 }
-
-
-
 
 .boton-inicio{
     display: flex;
@@ -126,8 +123,7 @@ img{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 800px;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
     animation-name: animationgallery1;
     animation-iteration-count: initial;
     animation-duration: 8s;

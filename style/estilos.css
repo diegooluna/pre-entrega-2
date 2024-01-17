@@ -6,47 +6,25 @@
   /* img: max width 100%;; */
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.header .h1 {
+.h1 {
   color: #f3f0e1;
   background-color: #3a3635;
   font-family: "mttmilano";
   text-align: center;
   font-size: 4rem;
   letter-spacing: 0.75em;
-  /* word-spacing: 0.25em; */
-  /* margin-bottom: 1rem; */
   padding-top: 1rem;
-  width: 100%;
-}
-.header .h1p {
-  font-size: 1rem;
-  letter-spacing: 0.6em;
-  padding: 1rem;
-  width: 100vw;
+  margin-bottom: 0;
 }
 
-.footer {
+.h2 {
   color: #f3f0e1;
+  background-color: #3a3635;
   font-family: "mttmilano";
   text-align: center;
-  background-color: #3a3635;
-  font-size: 15px;
-  padding: 1px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
+  font-size: 1.5rem;
+  letter-spacing: 0.75em;
+  padding-top: 1rem;
 }
 
 @keyframes animationgallery0 {
@@ -226,7 +204,42 @@
   max-height: 45vh;
 }
 
+.footer {
+  color: #f3f0e1;
+  font-family: "mttmilano";
+  text-align: center;
+  background-color: #3a3635;
+  font-size: 15px;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 @media (max-width: 1600px) {
+  .h1 {
+    color: #f3f0e1;
+    background-color: #3a3635;
+    font-family: "mttmilano";
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 0.75em;
+    padding-top: 1rem;
+    margin-bottom: 0;
+  }
+  .h2 {
+    color: #f3f0e1;
+    background-color: #3a3635;
+    font-family: "mttmilano";
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.75em;
+    padding-top: 1rem;
+  }
   .aboutmetxt {
     display: none;
   }
@@ -237,27 +250,44 @@
     font-size: 1em;
     margin: 0.5rem;
   }
+  .exampleinputemail {
+    width: 80%;
+  }
+  .mb-3 {
+    width: auto;
+  }
 }
 @media (max-width: 800px) {
+  .exampleinputemail {
+    width: 80%;
+  }
+  .tellme {
+    width: 80%;
+  }
   .mb-3 {
     width: auto;
   }
   .header {
-    display: inline-block;
-    width: 100vw;
+    display: block;
   }
   .h1 {
+    color: #f3f0e1;
+    background-color: #3a3635;
+    font-family: "mttmilano";
+    text-align: center;
     font-size: 2rem;
-    letter-spacing: 0.4em;
-    text-align: center;
-    width: 100vw;
+    letter-spacing: 0.25em;
+    padding-top: 1rem;
+    margin-bottom: 0;
   }
-  .h1p {
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    padding: 0.5rem;
+  .h2 {
+    color: #f3f0e1;
+    background-color: #3a3635;
+    font-family: "mttmilano";
     text-align: center;
-    width: 100vw;
+    font-size: 0.5rem;
+    letter-spacing: 0.25em;
+    padding-top: 1rem;
   }
   .menuitem {
     font-size: 14px;
@@ -267,7 +297,7 @@
     height: auto;
   }
   .flor1 {
-    width: 80%;
+    width: 50vw;
   }
   .introgallery {
     max-width: 100%;
@@ -278,6 +308,7 @@
   .footer {
     font-size: 12px;
     padding: 1px;
+    width: 100%;
   }
   .boton-inicio {
     font-size: 1rem;
@@ -291,7 +322,7 @@
   .aboutmemobile {
     display: inline;
     height: 40vh;
-    width: 40vw;
+    width: 80vw;
     font-size: 1em;
     margin: 0.5rem;
   }
@@ -330,6 +361,53 @@
     content: "Harley Davidson 883 Bobber by Pacorro";
     font-size: 4em;
     text-shadow: 0 0 10px #f3f0e1;
+  }
+}
+@media (max-width: 500px) {
+  .menuitem {
+    color: black;
+    margin: 6px;
+    font-size: 12px;
+    font-family: "mttmilano";
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+  }
+  .exampleinputemail {
+    width: 80%;
+  }
+  .mb-3 {
+    width: 80%;
+  }
+  .tellme {
+    width: 60%;
+  }
+}
+@media (max-width: 400px) {
+  .mb-3 {
+    width: 80%;
+  }
+  .tellme {
+    width: 60%;
+  }
+  .h1 {
+    color: #f3f0e1;
+    background-color: #3a3635;
+    font-family: "mttmilano";
+    text-align: center;
+    font-size: 12px;
+    padding-top: 1rem;
+    margin-bottom: 0;
+  }
+  .h2 {
+    color: #f3f0e1;
+    background-color: #3a3635;
+    font-family: "mttmilano";
+    text-align: center;
+    font-size: 6px;
+    padding-top: 1rem;
   }
 }
 html {
@@ -446,8 +524,7 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 800px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   animation-name: animationgallery1;
   animation-iteration-count: initial;
   animation-duration: 8s;

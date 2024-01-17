@@ -1,4 +1,25 @@
 @media (max-width: 1600px){
+    .h1{
+        color: $color-fondo;
+        background-color: $color-header ;
+        font-family:$fuente-general;
+        text-align: center;
+        font-size: 4rem;
+        letter-spacing: 0.75em;
+        padding-top: 1rem;
+        margin-bottom: 0;
+    
+    }
+    .h2{
+        color: $color-fondo;
+        background-color: $color-header ;
+        font-family:$fuente-general;
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 0.75em;
+        padding-top: 1rem;
+
+    }
     .aboutmetxt {
         display: none;
        
@@ -10,31 +31,67 @@
         font-size: 1em;
         margin: 0.5rem;
     }
+    .exampleinputemail{
+        width: 80%;
+    }
+ 
+    .mb-3 {
+        width: auto;
+    }
     
 }
 
 @media (max-width: 800px) {
+//     .mb-3 {
+//         width: 80%;
+//  }
+    .exampleinputemail{
+        width: 80%;
+    }
+    .tellme{
+         width: 80%;
+ }
     .mb-3 {
         width: auto;
     }
     .header {
-        display: inline-block;
-        width: 100vw;
+        display: block;
     }
-    .h1 {
+    .h1{
+        color: $color-fondo;
+        background-color: $color-header ;
+        font-family:$fuente-general;
+        text-align: center;
         font-size: 2rem;
-        letter-spacing: 0.4em;
-        text-align: center;
-        width: 100vw;
+        letter-spacing: 0.25em;
+        padding-top: 1rem;
+        margin-bottom: 0;
+    
     }
+    .h2{
+        color: $color-fondo;
+        background-color: $color-header ;
+        font-family:$fuente-general;
+        text-align: center;
+        font-size: 0.5rem;
+        letter-spacing: 0.25em;
+        padding-top: 1rem;
 
-    .h1p {
-        font-size: 0.8rem;
-        letter-spacing: 0.1em;
-        padding: 0.5rem;
-        text-align: center;
-        width: 100vw;
     }
+    // .h1 {
+    //     font-size: 1.5rem;
+    //     letter-spacing: 0.4em;
+    //     text-align: center;
+    //     width: 100vw;
+    // }
+
+    // .h2 {
+    //     font-size: 0.2rem;
+    //     letter-spacing: 0.1em;
+    //     padding: 0.5rem;
+    //     text-align: center;
+    //     width: 100vw;
+    // }
     .menuitem {
         font-size: 14px;
 
@@ -45,7 +102,7 @@
     }
     
     .flor1 {
-        width: 80%; 
+        width: 50vw; 
     }
     .introgallery {
         max-width: 100%;
@@ -61,6 +118,7 @@
     .footer {
         font-size: 12px;
         padding: 1px;
+        width: 100%;
     }
 
     .boton-inicio {
@@ -78,7 +136,7 @@
     .aboutmemobile{
         display: inline;
         height: 40vh;
-        width: 40vw;
+        width: 80vw;
         font-size: 1em;
         margin: 0.5rem;
     }
@@ -122,5 +180,56 @@
         content:"Harley Davidson 883 Bobber by Pacorro";
         font-size: 4em;
         text-shadow: 0 0 10px #f3f0e1 ;
+    }
+}
+@media (max-width:500px){
+    .menuitem{
+        color: black;
+        margin: 6px;
+        font-size: 12px;
+        font-family: $fuente-general;
+        text-decoration: none;
+        list-style-type: none;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+    }
+    .exampleinputemail{
+        width: 80%;
+    }
+    .mb-3 {
+           width: 80%;
+    }
+   .tellme{
+            width: 60%;
+   }
+}
+@media (max-width:400px){
+    .mb-3 {
+        width: 80%;
+ }
+    .tellme{
+         width: 60%;
+ }
+    .h1{
+        color: $color-fondo;
+        background-color: $color-header ;
+        font-family:$fuente-general;
+        text-align: center;
+        font-size: 12px;
+        // letter-spacing: 0.75em;
+        padding-top: 1rem;
+        margin-bottom: 0;
+    
+    }
+    .h2{
+        color: $color-fondo;
+        background-color: $color-header ;
+        font-family:$fuente-general;
+        text-align: center;
+        font-size: 6px;
+        // letter-spacing: 0.75em;
+        padding-top: 1rem;
+
     }
 }
