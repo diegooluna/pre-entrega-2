@@ -102,30 +102,31 @@
     display: grid;
     gap: 0.5rem;
     justify-items: center;
+    margin: 0.5rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas: 
         "img1 img2"
         "img3 img4";
        
         .itemgal1{
             grid-area: img1;
-            overflow: hidden;
+            // overflow: hidden;
         }
         
         .itemgal3{
             grid-area: img2;
-            overflow: hidden;
+            // overflow: hidden;
         
         }
         .itemgal5{
             grid-area: img3;
-            overflow: hidden;
+            // overflow: hidden;
         
         }
         .itemgal6{
             grid-area: img4;
-            overflow: hidden;
+            // overflow: hidden;
         }
 }
 

@@ -21,7 +21,6 @@ a:hover:not(#instalink, #mailiconlink){
 }
 
 body{ background-color: $color-fondo;
-        cursor: pointer;
 }
 @font-face {
     font-family: "mttmilano";
@@ -39,6 +38,7 @@ body{ background-color: $color-fondo;
     bottom: 50%;
     left: 50%;
     font-family: $fuente-general;
+    // font-size: 1.8rem !important;
     white-space: nowrap; 
     
     .boton-inicio a {
@@ -48,14 +48,16 @@ body{ background-color: $color-fondo;
                 color: $color-fondo;
                 transition: 0.7s;
                 border-radius: 50%;
-                padding: 6px;
+                padding: 8px;
                 white-space: nowrap; 
-                font-size: 1.5rem !important;
+                font-size: 2rem !important;
                 }
             }
     }
 }
-
+.btn-light{
+    font-size: 1.5rem;
+}
 .Menu{
     position: relative ;
     text-align: center;

@@ -127,25 +127,22 @@
   display: grid;
   gap: 0.5rem;
   justify-items: center;
+  margin: 0.5rem;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
   grid-template-areas: "img1 img2" "img3 img4";
 }
 .galeriamotos .itemgal1 {
   grid-area: img1;
-  overflow: hidden;
 }
 .galeriamotos .itemgal3 {
   grid-area: img2;
-  overflow: hidden;
 }
 .galeriamotos .itemgal5 {
   grid-area: img3;
-  overflow: hidden;
 }
 .galeriamotos .itemgal6 {
   grid-area: img4;
-  overflow: hidden;
 }
 
 .gridaboutme {
@@ -211,6 +208,7 @@
   background-color: #3a3635;
   font-size: 15px;
   padding: 1px;
+  padding-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -480,7 +478,6 @@ a:hover:not(#instalink, #mailiconlink) {
 
 body {
   background-color: #f3f0e1;
-  cursor: pointer;
 }
 
 @font-face {
@@ -504,9 +501,13 @@ body {
   color: #f3f0e1;
   transition: 0.7s;
   border-radius: 50%;
-  padding: 6px;
+  padding: 8px;
   white-space: nowrap;
-  font-size: 1.5rem !important;
+  font-size: 2rem !important;
+}
+
+.btn-light {
+  font-size: 1.5rem;
 }
 
 .Menu {
