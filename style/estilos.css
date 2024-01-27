@@ -25,6 +25,7 @@
   font-size: 1.5rem;
   letter-spacing: 0.75em;
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @keyframes animationgallery0 {
@@ -123,7 +124,6 @@
 }
 
 .galeriamotos {
-  height: 100vh;
   display: grid;
   gap: 0.5rem;
   justify-items: center;
@@ -202,17 +202,20 @@
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #3a3635;
+}
+
+.footertext {
   color: #f3f0e1;
   font-family: "mttmilano";
   text-align: center;
   background-color: #3a3635;
   font-size: 15px;
-  padding: 1px;
-  padding-bottom: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: fixed;
+  padding: 0.3rem;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -484,6 +487,10 @@ body {
   font-family: "mttmilano";
   src: url(../fonts/mttmilano.otf);
 }
+main {
+  padding-bottom: 0.5rem;
+}
+
 .boton-inicio {
   display: flex;
   justify-content: center;
@@ -548,7 +555,7 @@ img {
 }
 #carouselExampleSlidesOnly .carousel-inner .carousel-item {
   width: 60vw;
-  margin: 0 auto;
+  margin: 0.5rem auto;
 }
 
 @keyframes animationgallery1 {
@@ -634,4 +641,9 @@ input:hover {
 
 .form-control {
   width: 200px;
+}
+
+.faviconlogo {
+  height: 25vh;
+  margin: 1rem;
 }/*# sourceMappingURL=estilos.css.map */

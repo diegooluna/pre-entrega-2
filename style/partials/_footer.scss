@@ -1,15 +1,19 @@
 .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-end;
+    background-color: $color-header;
+
+   
+}
+.footertext{
     color: $color-fondo;
     font-family: $fuente-general;
     text-align: center;
     background-color: $color-header;
     font-size: 15px;
-    padding: 1px;
-    padding-bottom: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
+    padding: 0.3rem;
     bottom: 0;
     left: 0;
     width: 100%;

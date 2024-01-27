@@ -27,7 +27,9 @@ body{ background-color: $color-fondo;
     src: url(../fonts/mttmilano.otf);
 
 }
-
+main{
+    padding-bottom: 0.5rem;
+}
 .boton-inicio{
     display: flex;
     justify-content: center;
@@ -95,7 +97,7 @@ img{
 
         .carousel-item{
             width: 60vw;
-            margin: 0 auto;
+            margin: 0.5rem auto;
         
         }
     }
@@ -185,4 +187,8 @@ input:hover{
 
 .form-control{
     width: 200px;
+}
+.faviconlogo{
+    height: 25vh ;
+    margin: 1rem;
 }
