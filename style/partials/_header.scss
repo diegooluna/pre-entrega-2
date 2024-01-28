@@ -1,3 +1,8 @@
+header{
+    position: sticky;
+    top: 0;
+    background-color:$color-fondo ;
+}
 .h1{
     color: $color-fondo;
     background-color: $color-header ;
@@ -19,4 +24,25 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 
+    }
+    .menudiv{
+        position: sticky;
+        top: 0;
+        background-color:$color-fondo ;
+    }
+    .Menu{
+        text-align: center;
+    
+        ul{ color:#504c45;
+            list-style-type: none;}
+        .menuitem{
+            color: black;
+            margin: 1rem;
+            font-family: $fuente-general;
+            text-decoration: none;
+            list-style-type: none;
+            display: inline-block;
+            text-align: center;
+            // position: relative;
+        }
     }

@@ -6,6 +6,12 @@
   /* img: max width 100%;; */
 }
 
+header {
+  position: sticky;
+  top: 0;
+  background-color: #f3f0e1;
+}
+
 .h1 {
   color: #f3f0e1;
   background-color: #3a3635;
@@ -26,6 +32,29 @@
   letter-spacing: 0.75em;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.menudiv {
+  position: sticky;
+  top: 0;
+  background-color: #f3f0e1;
+}
+
+.Menu {
+  text-align: center;
+}
+.Menu ul {
+  color: #504c45;
+  list-style-type: none;
+}
+.Menu .menuitem {
+  color: black;
+  margin: 1rem;
+  font-family: "mttmilano";
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
 }
 
 @keyframes animationgallery0 {
@@ -533,25 +562,6 @@ main {
 
 .btn-light {
   font-size: 1.5rem;
-}
-
-.Menu {
-  position: relative;
-  text-align: center;
-}
-.Menu ul {
-  color: #504c45;
-  list-style-type: none;
-}
-.Menu .menuitem {
-  color: black;
-  margin: 1rem;
-  font-family: "mttmilano";
-  text-decoration: none;
-  list-style-type: none;
-  display: inline-block;
-  text-align: center;
-  position: relative;
 }
 
 img {
