@@ -2,6 +2,7 @@ header{
     position: sticky;
     top: 0;
     background-color:$color-fondo ;
+    z-index: 2;
 }
 .h1{
     color: $color-fondo;
@@ -35,6 +36,7 @@ header{
     
         ul{ color:#504c45;
             list-style-type: none;}
+            padding-left: 0;
         .menuitem{
             color: black;
             margin: 1rem;

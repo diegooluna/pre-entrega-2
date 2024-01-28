@@ -62,8 +62,6 @@ main{
 }
 
 
-
-
 img{
     height: 100%;
     width: 100%;
@@ -75,7 +73,8 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    position: relative; 
+    z-index: 0;
     .carousel-inner{
         display: flex;
         margin: 0 auto;
@@ -183,7 +182,6 @@ input:hover{
     width: auto;
     text-align: center;
 }
-.faviconlogo{
-    height: 25vh ;
-    margin: 1rem;
+ul{
+    padding-left: 0;
 }
