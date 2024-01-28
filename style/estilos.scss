@@ -183,10 +183,20 @@ input:hover{
 }
 .btn-primary {
     align-self: center; 
+    
 }
-
+.contactbtn{
+    margin-top: 2rem;
+}
+.confirmation{
+    margin-top: 1rem;
+}
+.confirmationbtn{
+    margin: 1rem;
+}
 .form-control{
-    width: 200px;
+    width: auto;
+    text-align: center;
 }
 .faviconlogo{
     height: 25vh ;

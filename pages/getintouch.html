@@ -35,24 +35,40 @@
         </div>
         <form>
           <div class="mb-3">
+            <label for="Name" class="form-label">Your Name</label>
+            <input type="text" class="form-control"  placeholder="John">
+            <label for="LastName" class="form-label">Your Last Name</label>
+            <input type="text" class="form-control"  placeholder="Wick">
             <label for="exampleInputEmail1" class="form-label">Your Email</label>
             <input type="email" class="form-control" class="exampleInputEmail1" aria-describedby="emailHelp" placeholder="xxxx@xxxxxx.xxx">
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
           </div>
           <div class="mb-3">
-            <textarea  class="tellme" cols="60" rows="10" placeholder="Tell me everything..."></textarea>
+            <textarea  class="tellme" cols="100" rows="40" placeholder="Tell me everything..."></textarea>
           <div class="mb-3">
-          <button type="submit" class="btn btn-primary">Contact me!</button>
+            <div class="confirmation">
+              <label for="confirm" class="form-label">Confirm you're not a robot</label>
+            </div>
+            <div class="confirmationbtn">
+              <input type="checkbox"  name="notarobot" value="robot">
+            <label for="notarobot"> I am not a robot</label>
+            </div>  
+          <button type="submit" class="btn btn-primary contactbtn">Contact me!</button>
+          
           </div>
-          <div>
-            <img src="../img/faviconlogo.png" alt="favicon" class="faviconlogo">
-          </div>
+         
         </form>
         <div></div>
       </main>
        
     <footer class="footer">
         <p class="footertext">All rights Reserved - Todos los Derechos Reservados | Diego Luna Photo ®</p>
+        <ul class="footericonlist">
+          <li class="footeritem"> <img src="../img/footericons/instagram-2016-5.svg" alt=""></li>
+          <li class="footeritem"> <img src="../img/footericons/linkedin-icon-2.svg" alt=""></li>
+          <li class="footeritem"> <img src="../img/footericons/github-icon-1.png" alt=""></li>
+          <li class="footeritem"> <img src="../img/footericons/upwork-roundedsquare-1.svg" alt=""></li>
+        </ul>
     </footer>
 
     <script src="../js/bootstrap.bundle.min.js"></script>

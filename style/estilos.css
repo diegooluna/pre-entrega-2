@@ -221,6 +221,24 @@
   width: 100%;
 }
 
+.footericonlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.footeritem {
+  width: 2%;
+  filter: saturate(50%) sepia(20);
+  margin: 0.5rem;
+}
+
+.footeritem:hover {
+  filter: saturate(100%);
+}
+
 @media (max-width: 1600px) {
   .h1 {
     color: #f3f0e1;
@@ -419,10 +437,10 @@
     position: relative;
   }
   .exampleinputemail {
-    width: 80%;
+    width: auto;
   }
   .mb-3 {
-    width: 80%;
+    width: auto;
   }
   .tellme {
     width: 60%;
@@ -439,7 +457,7 @@
 }
 @media (max-width: 400px) {
   .mb-3 {
-    width: 80%;
+    width: auto;
   }
   .tellme {
     width: 60%;
@@ -639,8 +657,21 @@ input:hover {
   align-self: center;
 }
 
+.contactbtn {
+  margin-top: 2rem;
+}
+
+.confirmation {
+  margin-top: 1rem;
+}
+
+.confirmationbtn {
+  margin: 1rem;
+}
+
 .form-control {
-  width: 200px;
+  width: auto;
+  text-align: center;
 }
 
 .faviconlogo {

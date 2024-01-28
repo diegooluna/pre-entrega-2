@@ -246,10 +246,10 @@
         position: relative;
     }
     .exampleinputemail{
-        width: 80%;
+        width: auto;
     }
     .mb-3 {
-           width: 80%;
+           width: auto;
     }
    .tellme{
             width: 60%;
@@ -270,7 +270,7 @@
 }
 @media (max-width:400px){
     .mb-3 {
-        width: 80%;
+        width: auto;
  }
     .tellme{
          width: 60%;
