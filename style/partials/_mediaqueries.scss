@@ -41,6 +41,24 @@
 //     .mb-3 {
 //         width: 80%;
 //  }
+
+#carouselExampleSlidesOnly{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    z-index: 0;
+    .carousel-inner{
+        display: flex;
+        margin: 0 auto;
+
+        .carousel-item{
+            width:  80vw;
+            margin: 0.5rem auto;
+        }
+    }
+}
+
     .exampleinputemail{
         width: 80%;
     }

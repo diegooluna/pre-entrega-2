@@ -245,6 +245,21 @@ header {
   }
 }
 @media (max-width: 800px) {
+  #carouselExampleSlidesOnly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+  }
+  #carouselExampleSlidesOnly .carousel-inner {
+    display: flex;
+    margin: 0 auto;
+  }
+  #carouselExampleSlidesOnly .carousel-inner .carousel-item {
+    width: 80vw;
+    margin: 0.5rem auto;
+  }
   .exampleinputemail {
     width: 80%;
   }
@@ -501,7 +516,7 @@ img {
   margin: 0 auto;
 }
 #carouselExampleSlidesOnly .carousel-inner .carousel-item {
-  width: 60vw;
+  width: auto;
   margin: 0.5rem auto;
 }
 
